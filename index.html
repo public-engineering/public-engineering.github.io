@@ -10,6 +10,7 @@
 	{
 	 location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
 	}
+	    document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://josephmarhee.com/assets/tachyons.css">
@@ -46,6 +47,10 @@
               width: 50%;
           }
       }
+footer {
+  text-align: center;
+  font-family: sans-serif;
+}
     </style>
 <div id="fb-root"></div>
 </head>
@@ -64,7 +69,7 @@
   </main>
     <footer>
         <section class="phm phl-ns mw7 center pvxl">
-        <div id="foot"><i class="em em-copyright"></i> 2023 - A Project by OpenFunction | 
+        <div id="foot"><i class="em em-copyright"></i> ©<span id="year"></span> - A Project by OpenFunction | 
             <a href="mailto:ops@openfunction.co"><i class="em em-email"></i> - ops@openfunction.co</a> | 
             <a target="_blank" href="https://mastodon.social/@openfunction"><i class="em em-bird"></i> - @openfunction on Mastodon.social</a> | 
             <a target="_blank" href="assets/ops-openfunction.gpg"><i class="em em-closed_lock_with_key"></i> - GPG Key</a>
